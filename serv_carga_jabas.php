@@ -8,7 +8,7 @@
  $sidx = $_GET['sidx']; // get index row - i.e. user click to sort
  $sord = $_GET['sord']; // get the direction
  if(!$sidx) $sidx =1; // connect to the database
- $result = mysql_query("SELECT COUNT(*) AS count FROM tipo_parihuela");
+ $result = mysql_query("SELECT COUNT(*) AS count FROM tipo_jaba");
  $row = mysql_fetch_array($result,MYSQL_ASSOC);
  $count = $row['count'];
 
@@ -20,7 +20,7 @@
  } if ($page > $total_pages) 
  $page=$total_pages; 
  $start = $limit*$page - $limit; // do not put $limit*($page - 1) 
- $SQL = "SELECT * FROM tipo_parihuela ORDER BY 1 ASC LIMIT $start, $limit"; 
+ $SQL = "SELECT * FROM tipo_jaba ORDER BY 1 ASC LIMIT $start, $limit"; 
  $result = mysql_query( $SQL ) or die("Couldn t execute query.".mysql_error());
  $response->page = $page;
  $response->total = $total_pages;
@@ -28,7 +28,7 @@
  $i=0;
  while($row = mysql_fetch_array($result,MYSQL_ASSOC)) { 
  //$response->rows[$i]['id']=$row[EmployeeID];
- $response->rows[$i]['cell']=array("",utf8_encode($row['idtipoparihuela']),$row['descripcionparihuela'],$row['peso'],utf8_encode($row['estado'])); $i++;
+ $response->rows[$i]['cell']=array("",utf8_encode($row['idtipjaba']),$row['descripcionjaba'],$row['peso'],utf8_encode($row['estado'])); $i++;
  } 
  echo json_encode($response);
 

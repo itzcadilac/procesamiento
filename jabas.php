@@ -71,7 +71,7 @@ include "cabecera_general.php";
 
 						<div class="page-header">
 							<h1>
-								Registro de Tipos de Capacitaciones
+								Registro de Tipos de Jabas
 								<small>
 								<!--	<i class="ace-icon fa fa-angle-double-right"></i>-->
 
@@ -90,7 +90,7 @@ function spacio(e){
 }
 </script>
 
-<form class="form-horizontal" role="form" id="frm" name="formregistrar" action="tipcapacitacionservices.php" method="post" enctype="multipart/form-data">
+<form class="form-horizontal" role="form" id="frm" name="formregistrar" action="tipjabasservices.php" method="post" enctype="multipart/form-data">
 <script language="javascript">
    function solonumero(e){
 var keynum = window.event ? window.event.keyCode : e.which;
@@ -144,17 +144,19 @@ if ($resultcontra->num_rows > 0) //si la variable tiene al menos 1 fila entonces
 					<div class="clearfix form-actions">
 					
 					<div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Descripción de la Capacitación: </label>
+						<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Nombre Jaba: </label>
 						<div class="col-sm-9">
-							<input type="text" name="desccapacitacion" id="desccapacitacion" placeholder="" class="form-control" required/>
+							<input type="text" name="descripcionjaba" id="descripcionjaba" placeholder="" class="form-control" required/>
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Nombre Corto: </label>
+						<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Peso Jaba: </label>
 						<div class="col-sm-9">
-							<input type="text" name="nombrecorto" id="nombrecorto"  placeholder="" class="form-control" required/>
+							<input type="text" name="peso" id="peso"  placeholder="" class="form-control" required/>
 						</div>
 					</div>
+
+					<!--
 					<div class="form-group">
 						<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Codificación: </label>
 						<div class="col-sm-9">
@@ -188,7 +190,7 @@ if ($resultcontra->num_rows > 0) //si la variable tiene al menos 1 fila entonces
 							<input type="text" name="image" id="image"  placeholder="" class="form-control" />
 						</div>
 					</div>
-
+						-->
 
 
 					</div>
@@ -197,7 +199,7 @@ if ($resultcontra->num_rows > 0) //si la variable tiene al menos 1 fila entonces
 								<div class="col-md-offset-3 col-md-9">
 									<button class="btn btn-info" type="submit" id="postback" name="postback" accesskey="6">
 											<i class="ace-icon fa fa-check bigger-110"></i>
-											Registrar Tipo de Capacitación
+											Registrar Jaba
 									</button>
 										&nbsp; &nbsp; &nbsp;
 									<button class="btn" type="reset">
@@ -347,11 +349,11 @@ if ($resultcontra->num_rows > 0) //si la variable tiene al menos 1 fila entonces
 					},
 					
 			
-					url:'serv_carga_tipcapacitacion.php',
+					url:'serv_carga_jabas.php',
 					data: grid_data,
 					datatype: "json",
 					height: 400,
-					colNames:['Acciones', 'Código', 'Capacitación', 'Nombre Corto','Codificación','Empresa','Costo','Órden', 'Nomb. Imagen', 'Estado'],
+					colNames:['Acciones', 'Código', 'Jaba', 'Peso', 'Estado'],
 					colModel:[
 						{name:'select',index:'select', width:80, fixed:true, sortable:false, resize:false,
 							formatter:'actions', 
@@ -362,14 +364,15 @@ if ($resultcontra->num_rows > 0) //si la variable tiene al menos 1 fila entonces
 								editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback,type: 'POST',datatype: 'json'}
 							}
 						},
-						{name:'idecapacitacion',index:'idecapacitacion', width:60, editable: true, hidden: true },
-						{name:'desccapacitacion',index:'desccapacitacion', width:60, editable: true},
-						{name:'nombrecorto',index:'nombrecorto', width:60, editable: true},
+						{name:'idtipjaba',index:'idtipjaba', width:60, editable: true, hidden: true },
+						{name:'descripcionjaba',index:'descripcionjaba', width:60, editable: true},
+						{name:'peso',index:'peso', width:60, editable: true},
+						/*
 						{name:'codificacion', index:'codificacion', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}},
 						{name:'ideempresa', index:'ideempresa', align: "center", edittype : "select", formatter: 'select', formatoptions: {value:{"1":"NESTLE PERU S A","2":"FCA PERUANA ETERNIT S A","3":"OTROS"}}, width:60,editable: true, editoptions:{value:"1:NESTLE PERU S A;2:FCA PERUANA ETERNIT S A;3:OTROS", size:"60",maxlength:"150"}},
 						{name:'costo', index:'costo', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}},
 						{name:'orden', index:'orden', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}},
-						{name:'image', index:'image', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}},
+						{name:'image', index:'image', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}},*/
 						//{name: "closed", width: 70, align: "center", formatter: "checkbox", formatoptions: { disabled: false},edittype: "checkbox", editoptions: {value: "Yes:No", defaultValue: "Yes"}, stype: "select", searchoptions: { sopt: ["eq", "ne"], value: ":Any;true:Yes;false:No" } }
 						//{name:'estado', index:'estado', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}}
 						{name:'estado', index:'estado', align: "center", width:20,editable: true,edittype:'checkbox', editoptions: {value:"1:0"}, formatter: "checkbox", formatoptions:{disabled : true}}
@@ -397,8 +400,8 @@ if ($resultcontra->num_rows > 0) //si la variable tiene al menos 1 fila entonces
 						}, 0);
 					},
 					
-					editurl: "serv_actualiza_tipcapacitacion.php",
-					caption: "Listado de Tipo de Capacitaciones"
+					editurl: "serv_actualiza_jabas.php",
+					caption: "Listado de Tipo Parihuela"
 			
 					//,autowidth: true,
 			

@@ -107,7 +107,7 @@ $result= mysqli_query($conx,$sql) or die(mysqli_error());
 
 						<div class="page-header">
 							<h1>
-								Listado de Solicitudes
+								Listado de Servicios
 								<small>
 									
 								</small>
@@ -197,7 +197,7 @@ $result= mysqli_query($conx,$sql) or die(mysqli_error());
 														<h1>
 															<small>
 															<!--	<i class=ace-icon fa fa-angle-double-right></i>-->
-																No existen expedientes por mostrar
+																No existen servicios por mostrar
 															</small>
 														</h1>
 													</div>";

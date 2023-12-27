@@ -33,6 +33,9 @@ require_once APP_BASEDIR . "/clases/dao/ReporteActosDAO.class.php";
 require_once APP_BASEDIR . "/clases/dao/CapacitadorDAO.class.php";
 require_once APP_BASEDIR . "/clases/dao/PersonalxCapacitacionDAO.class.php";
 require_once APP_BASEDIR . "/clases/dao/CargaFotosDAO.class.php";
+require_once APP_BASEDIR . "/clases/dao/ParihuelaDAO.class.php";
+require_once APP_BASEDIR . "/clases/dao/JabaDAO.class.php";
+require_once APP_BASEDIR . "/clases/dao/ClientesDAO.class.php";
 
 require_once APP_BASEDIR . "/clases/vo/UsuarioVO.class.php";
 require_once APP_BASEDIR . "/clases/vo/SolicitudVO.class.php";
@@ -45,5 +48,8 @@ require_once APP_BASEDIR . "/clases/vo/CuposVO.class.php";
 require_once APP_BASEDIR . "/clases/vo/CargaFotosVO.class.php";
 require_once APP_BASEDIR . "/clases/vo/DatosInformesVO.class.php";
 require_once APP_BASEDIR . "/clases/vo/CuerpoInformesVO.class.php";
+require_once APP_BASEDIR . "/clases/vo/ParihuelaVO.class.php";
+require_once APP_BASEDIR . "/clases/vo/JabaVO.class.php";
+require_once APP_BASEDIR . "/clases/vo/ClientesVO.class.php";
 
 ?>

@@ -2,21 +2,18 @@
 session_start();
 require_once "./conf.php";
 
-$daosol = new CapacitacionDAO();
+$daosol = new ParihuelaDAO();
 
-$solVO = new CapacitacionVO(
+$solVO = new ParihuelaVO(
     "",
-    $_POST['tipcapacitacion'],
-    $_POST['diacapacitacion'],
-    $_POST['horacapacitacion'],
-    "",
-    $_POST['capacity'],
-    "",
-    $_POST['lugar_capacitacion']);
+    $_POST['descripcionparihuela'],
+    $_POST['peso'],
+    ""
+);
 
-$daosol->AgendarCapacitacion($solVO);
+$daosol->RegistrarParihuela($solVO);
 
-header ("Location: agendarcapacitacion.php");
+header ("Location: parihuelas.php");
            
          
 ?>

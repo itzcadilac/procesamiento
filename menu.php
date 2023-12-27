@@ -15,7 +15,7 @@
 					<li class="">
 						<a href="principal.php">
 							<i class="menu-icon fa fa-tachometer"></i>
-							<span class="menu-text"> Listar Solicitudes </span>
+							<span class="menu-text"> Listar Servicios </span>
 						</a>
 
 						<b class="arrow"></b>
@@ -35,19 +35,20 @@
 							<li class="">
 								<a href="solicitudesxcapacitacion.php">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Solicitudes por Capacitación
+									Servicios por Cliente
 								</a>
 
 								<b class="arrow"></b>
 							</li>
+							<!--
 							<li class="">
 								<a href="calendario.php">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Calendario de Capacitaciones
+									Servicios por 
 								</a>
 
 								<b class="arrow"></b>
-							</li>								
+							</li>-->								
 						</ul>
 					</li>
 
@@ -62,21 +63,22 @@
 						
 						<ul class="submenu">
 							<li class="">
-								<a href="tipcapacitaciones.php">
+								<a href="parihuelas.php">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Tipo de Capacitaciones
+									Tipo de Parihuelas
 								</a>
 
 								<b class="arrow"></b>
 							</li>							
 							<li class="">
-								<a href="agendarcapacitacion.php">
+								<a href="jabas.php">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Capacitaciones
+									Tipo de Jabas
 								</a>
 
 								<b class="arrow"></b>
 							</li>
+							<!--
 							<li class="">
 								<a href="capacitadores.php">
 									<i class="menu-icon fa fa-caret-right"></i>
@@ -93,14 +95,16 @@
 
 								<b class="arrow"></b>
 							</li>
+							-->
 							<li class="">
-								<a href="regpersonalxcurso.php">
+								<a href="regclientes.php">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Registro de Personas a Cursos
+									Registro de Clientes
 								</a>
 
 								<b class="arrow"></b>
-							</li>	
+							</li>
+							<!--
 							<li class="">
 								<a href="listaimpresion.php">
 									<i class="menu-icon fa fa-caret-right"></i>
@@ -139,7 +143,7 @@
 								</a>
 
 								<b class="arrow"></b>
-							</li>-->
+							</li>
 							<li class="">
 								<a href="cargamasiva.php">
 									<i class="menu-icon fa fa-caret-right"></i>
@@ -148,7 +152,7 @@
 
 								<b class="arrow"></b>
 							</li>
-							
+							-->
 						</ul>
 					</li>
 

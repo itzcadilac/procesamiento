@@ -3,8 +3,8 @@ require_once 'config.php';
  
  $oper = $_POST['oper'];
  $select = $_POST['id'];
- $idtipoparihuela = $_POST['idtipoparihuela'];
- $descripcionparihuela = $_POST['descripcionparihuela'];
+ $idtipjaba = $_POST['idtipjaba'];
+ $descripcionjaba = $_POST['descripcionjaba'];
  $peso = $_POST['peso'];
  /*
  $codificacion = $_POST['codificacion'];
@@ -15,7 +15,7 @@ require_once 'config.php';
  $estado = $_POST['estado'];
  
  if($oper=='edit'){
- mysql_query("UPDATE tipo_parihuela SET descripcionparihuela=UPPER('".$descripcionparihuela."'), peso=UPPER('".$peso."'), estado='".$estado."' where idtipoparihuela='".$idtipoparihuela."'")
+ mysql_query("UPDATE tipo_jaba SET descripcionjaba=UPPER('".$descripcionjaba."'), peso=UPPER('".$peso."'), estado='".$estado."' where idtipjaba='".$idtipjaba."'")
  or die(mysql_error());
  //mysql_close($db);
  }
