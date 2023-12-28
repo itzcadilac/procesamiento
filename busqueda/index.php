@@ -61,7 +61,7 @@
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
-							Sistema de Capacitaciones - SST ASESORES SAC
+							Sistema de Capacitaciones - KENKO
 						</small>
 					</a>
 				</div>

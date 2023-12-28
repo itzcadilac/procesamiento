@@ -1,7 +1,7 @@
 <?php
 
 // configure
-$from = 'SST Asesores SAC <entrenamiento@sstasesores.pe>';
+$from = 'KENKO <entrenamiento@sstasesores.pe>';
 $sendTo = "'".$_SESSION['razons']."'". "<".$_SESSION['email'].">"; //<ventas@novoexpert.net>; // Add Your Email
 $subject = 'Solicitud Recibida';
 //$fields = array('name' => 'Nombres', 'subject' => 'Asunto', 'email' => 'Correo', 'message' => 'Mensaje'); // array variable name => Text to appear in the email
@@ -15,7 +15,7 @@ $htmlcontent = "
 <head>
   <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
-  <title>SST Asesores SAC</title>
+  <title>KENKO</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link rel='stylesheet' href='https://software.sstasesores.pe/assets/css/contact.css' />
 
@@ -167,7 +167,7 @@ $htmlcontent = "
                   <a href='mailto:entrenamiento@sstasesores.pe'
                     style='color:#939DFF; text-decoration: none;'>entrenamiento@sstasesores.pe</a>
 
-                  <p style='margin:20px 0 32px'>© 2020 SST ASESORES SAC Todos los Derechos Reservados.</p>
+                  <p style='margin:20px 0 32px'>© 2020 KENKO Todos los Derechos Reservados.</p>
                 </td>
               </tr>
             </tbody>

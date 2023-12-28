@@ -6,7 +6,7 @@ require_once "./conf.php";
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Training Soft</title>
+		<title>Procesamiento Soft</title>
 		<link rel="icon" type="image/png" href="./imagenes/logo.png">
 		<meta name="description" content="User login page" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -61,7 +61,7 @@ require_once "./conf.php";
 									<span class="red">Training</span>
 									<span class="gray" id="id-text2">Soft 2.0</span>
 								</h1>
-								<h4 class="blue" id="id-company-text">SST Asesores SAC</h4>
+								<h4 class="blue" id="id-company-text">KENKO</h4>
 							</div>
 
 							<div class="space-6"></div>

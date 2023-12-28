@@ -6,7 +6,7 @@
 				<div class="footer-inner">
 					<div class="footer-content">
 						<span class="bigger-120">
-							<span class="blue bolder">SST Asesores SAC</span><br>
+							<span class="blue bolder">KENKO</span><br>
 							Powered by Novo Expert SRL <br>
 						</span>
 

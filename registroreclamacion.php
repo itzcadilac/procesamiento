@@ -78,7 +78,7 @@ header("Content-Type: text/html;charset=utf-8");
 					<a href="" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
-							SST Asesores SAC <br>
+							KENKO <br>
 						</small>
 					</a>
 				</div>

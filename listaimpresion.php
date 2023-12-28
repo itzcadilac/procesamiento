@@ -41,7 +41,7 @@ $result2 = mysqli_query($conx, $sql2) or die(mysqli_error());
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="UTF-8" />
-		<title>Training Soft</title>
+		<title>Procesamiento Soft</title>
 
 		<meta name="description" content="overview &amp; stats" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />

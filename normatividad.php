@@ -101,7 +101,7 @@
 					<a href="index.html" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
-							SST Asesores SAC
+							KENKO
 						</small>
 					</a>
 				</div>
