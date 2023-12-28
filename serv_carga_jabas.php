@@ -28,7 +28,7 @@
  $i=0;
  while($row = mysql_fetch_array($result,MYSQL_ASSOC)) { 
  //$response->rows[$i]['id']=$row[EmployeeID];
- $response->rows[$i]['cell']=array("",utf8_encode($row['idtipjaba']),$row['descripcionjaba'],$row['peso'],utf8_encode($row['estado'])); $i++;
+ $response->rows[$i]['cell']=array("",utf8_encode($row['idtipjaba']),$row['descripcionjaba'],$row['peso'],$row['estado']); $i++;
  } 
  echo json_encode($response);
 

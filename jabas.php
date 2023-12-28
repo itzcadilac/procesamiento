@@ -367,16 +367,7 @@ if ($resultcontra->num_rows > 0) //si la variable tiene al menos 1 fila entonces
 						{name:'idtipjaba',index:'idtipjaba', width:60, editable: true, hidden: true },
 						{name:'descripcionjaba',index:'descripcionjaba', width:60, editable: true},
 						{name:'peso',index:'peso', width:60, editable: true},
-						/*
-						{name:'codificacion', index:'codificacion', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}},
-						{name:'ideempresa', index:'ideempresa', align: "center", edittype : "select", formatter: 'select', formatoptions: {value:{"1":"NESTLE PERU S A","2":"FCA PERUANA ETERNIT S A","3":"OTROS"}}, width:60,editable: true, editoptions:{value:"1:NESTLE PERU S A;2:FCA PERUANA ETERNIT S A;3:OTROS", size:"60",maxlength:"150"}},
-						{name:'costo', index:'costo', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}},
-						{name:'orden', index:'orden', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}},
-						{name:'image', index:'image', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}},*/
-						//{name: "closed", width: 70, align: "center", formatter: "checkbox", formatoptions: { disabled: false},edittype: "checkbox", editoptions: {value: "Yes:No", defaultValue: "Yes"}, stype: "select", searchoptions: { sopt: ["eq", "ne"], value: ":Any;true:Yes;false:No" } }
-						//{name:'estado', index:'estado', width:60,editable: true,editoptions:{size:"60",maxlength:"150"}}
-						{name:'estado', index:'estado', align: "center", width:20,editable: true,edittype:'checkbox', editoptions: {value:"1:0"}, formatter: "checkbox", formatoptions:{disabled : true}}
-						
+						{name:'estado', index:'estado', align: "center", width:20,editable: true,edittype:'checkbox', editoptions: {value:"1:0"}, formatter: "checkbox", formatoptions:{disabled : true}}	
 					], 
 			
 					viewrecords : true,
@@ -401,7 +392,7 @@ if ($resultcontra->num_rows > 0) //si la variable tiene al menos 1 fila entonces
 					},
 					
 					editurl: "serv_actualiza_jabas.php",
-					caption: "Listado de Tipo Parihuela"
+					caption: "Listado de Tipo Jabas"
 			
 					//,autowidth: true,
 			
